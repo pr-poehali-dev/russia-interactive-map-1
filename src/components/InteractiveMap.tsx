@@ -39,7 +39,7 @@ export default function InteractiveMap() {
       <div className="relative w-full bg-white/10 backdrop-blur-sm rounded-3xl p-8 shadow-2xl border-2 border-white/30">
         <div className="relative w-full" style={{ paddingBottom: '50%' }}>
           <img 
-            src="https://cdn.poehali.dev/files/b59c5a9a-468e-4e53-99a1-eceb437dac65.jpg"
+            src="https://cdn.poehali.dev/files/4affb662-1295-4c96-9d7b-5a23a65912ff.jpg"
             alt="Карта России"
             className="absolute inset-0 w-full h-full object-contain rounded-2xl"
           />
