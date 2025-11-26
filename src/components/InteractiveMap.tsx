@@ -9,18 +9,18 @@ interface MapPoint {
 }
 
 const mapPoints: MapPoint[] = [
-  { regionId: 'far-east', x: 85, y: 45 },
-  { regionId: 'yakutia', x: 75, y: 30 },
-  { regionId: 'buryatia', x: 65, y: 55 },
-  { regionId: 'chuvashia', x: 35, y: 50 },
-  { regionId: 'tatarstan', x: 38, y: 52 },
-  { regionId: 'kalmykia', x: 32, y: 65 },
-  { regionId: 'mari-el', x: 36, y: 48 },
-  { regionId: 'udmurtia', x: 40, y: 46 },
-  { regionId: 'ossetia', x: 28, y: 68 },
-  { regionId: 'karelia', x: 22, y: 28 },
-  { regionId: 'saami', x: 20, y: 18 },
-  { regionId: 'pomory', x: 30, y: 25 }
+  { regionId: 'far-east', x: 88, y: 58 },
+  { regionId: 'yakutia', x: 78, y: 38 },
+  { regionId: 'buryatia', x: 68, y: 62 },
+  { regionId: 'chuvashia', x: 32, y: 54 },
+  { regionId: 'tatarstan', x: 35, y: 56 },
+  { regionId: 'kalmykia', x: 30, y: 72 },
+  { regionId: 'mari-el', x: 34, y: 51 },
+  { regionId: 'udmurtia', x: 38, y: 49 },
+  { regionId: 'ossetia', x: 28, y: 75 },
+  { regionId: 'karelia', x: 20, y: 35 },
+  { regionId: 'saami', x: 18, y: 22 },
+  { regionId: 'pomory', x: 27, y: 28 }
 ];
 
 export default function InteractiveMap() {
