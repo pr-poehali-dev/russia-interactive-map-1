@@ -1,14 +1,49 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import RussiaMap from '@/components/RussiaMap';
+import Snowflakes from '@/components/Snowflakes';
 
-const Index = () => {
+export default function Index() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 color-black text-black">Добро пожаловать!</h1>
-        <p className="text-xl text-gray-600">тут будет отображаться ваш проект</p>
+    <div className="min-h-screen bg-gradient-to-b from-red-600 via-red-700 to-red-800 relative overflow-hidden">
+      <Snowflakes />
+      
+      <div className="relative z-10 py-12 px-4">
+        <header className="text-center mb-12">
+          <h1 className="text-5xl md:text-6xl font-bold text-white mb-4 drop-shadow-lg">
+            🎄 Новогодние традиции России 🎄
+          </h1>
+          <p className="text-xl text-white/90 drop-shadow">
+            Нажмите на регион, чтобы узнать о его традициях
+          </p>
+        </header>
+
+        <RussiaMap />
+
+        <footer className="text-center mt-12 text-white/80">
+          <p className="text-sm">
+            С Новым годом! 🎉 Пусть каждый регион России встретит праздник по-своему ✨
+          </p>
+        </footer>
       </div>
+
+      <div 
+        className="absolute top-0 left-0 w-full h-32 bg-no-repeat bg-cover opacity-90 pointer-events-none"
+        style={{
+          backgroundImage: 'url(https://cdn.poehali.dev/files/dbce22b3-5783-4e5a-8006-0f7a8ff4d125.jpg)',
+          backgroundPosition: 'top',
+          maskImage: 'linear-gradient(to bottom, white, transparent)',
+          WebkitMaskImage: 'linear-gradient(to bottom, white, transparent)'
+        }}
+      />
+      
+      <div 
+        className="absolute bottom-0 left-0 w-full h-32 bg-no-repeat bg-cover opacity-90 pointer-events-none"
+        style={{
+          backgroundImage: 'url(https://cdn.poehali.dev/files/dbce22b3-5783-4e5a-8006-0f7a8ff4d125.jpg)',
+          backgroundPosition: 'bottom',
+          maskImage: 'linear-gradient(to top, white, transparent)',
+          WebkitMaskImage: 'linear-gradient(to top, white, transparent)'
+        }}
+      />
     </div>
   );
-};
-
-export default Index;
+}
