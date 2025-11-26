@@ -1,4 +1,5 @@
 import RussiaMap from '@/components/RussiaMap';
+import InteractiveMap from '@/components/InteractiveMap';
 import Snowflakes from '@/components/Snowflakes';
 
 export default function Index() {
@@ -12,11 +13,18 @@ export default function Index() {
             🎄 Новогодние традиции России 🎄
           </h1>
           <p className="text-xl text-white/90 drop-shadow">
-            Нажмите на регион, чтобы узнать о его традициях
+            Нажмите на точку на карте, чтобы узнать о традициях региона
           </p>
         </header>
 
-        <RussiaMap />
+        <InteractiveMap />
+        
+        <div className="mt-16">
+          <h2 className="text-3xl font-bold text-white text-center mb-8">
+            Все регионы
+          </h2>
+          <RussiaMap />
+        </div>
 
         <footer className="text-center mt-12 text-white/80">
           <p className="text-sm">
