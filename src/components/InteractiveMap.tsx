@@ -66,14 +66,14 @@ export default function InteractiveMap() {
                 <div className="relative">
                   <div 
                     className={`
-                      w-12 h-12 rounded-full flex items-center justify-center text-2xl
-                      shadow-lg transition-all duration-300 border-3
-                      ${isHovered ? 'scale-150 shadow-2xl' : 'scale-100'}
+                      w-8 h-8 rounded-full flex items-center justify-center text-base
+                      shadow-md transition-all duration-300
+                      ${isHovered ? 'scale-125 shadow-xl' : 'scale-100'}
                     `}
                     style={{
                       backgroundColor: region.color,
                       borderColor: 'white',
-                      borderWidth: '3px'
+                      borderWidth: '2px'
                     }}
                   >
                     {region.emoji}
